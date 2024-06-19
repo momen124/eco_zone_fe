@@ -31,6 +31,8 @@ export default function Header() {
               <IconShoppingCart size={16} />
               <span>Cart</span>
             </Link>
+            <Link href="/login" className="ml-4 text-gray-600">Login</Link>
+
           </nav>
         </div>
       </div>
