@@ -14,7 +14,7 @@ export default function Header() {
     <header className="border-b py-4">
       <div className="container mx-auto flex justify-between items-center">
         <div>
-          <h1 className="text-xl font-bold">EcoZone eCommerce</h1>
+          <h1 className="text-xl font-bold">NEXTON eCommerce</h1>
         </div>
         <div className="flex items-center space-x-4">
           <CustomInput 
