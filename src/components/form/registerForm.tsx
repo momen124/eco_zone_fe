@@ -1,54 +1,44 @@
-import { useForm, zodResolver } from '@mantine/form';
-import { Input, Button, Box, Text } from '@mantine/core';
+import { Input, Button } from '@mantine/core';
+import { useState } from 'react';
+import TextInput from '../ui/TextInput';
 import Link from 'next/link';
-import { registerSchema } from '../../../schemas/registerSchema';
 
 export default function RegisterForm() {
-  const form = useForm({
-    initialValues: {
-      email: '',
-      password: '',
-      confirmPassword: '',
-    },
-    validate: zodResolver(registerSchema),
-  });
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
 
-  const handleSubmit = (values: typeof form.values) => {
-    console.log(values);
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    // Handle form submission
   };
 
   return (
-    <form onSubmit={form.onSubmit(handleSubmit)}>
-      <Box mb="4">
-        <Input
-          label="Email"
-          placeholder="example@example.com"
-          {...form.getInputProps('email')}
-        />
-      </Box>
-      <Box mb="4">
-        <Input
-          label="Password"
-          placeholder="Your password"
-          type="password"
-          {...form.getInputProps('password')}
-        />
-      </Box>
-      <Box mb="4">
-        <Input
-          label="Confirm Password"
-          placeholder="Confirm your password"
-          type="password"
-          {...form.getInputProps('confirmPassword')}
-        />
-      </Box>
-      <Button type="submit" fullWidth className="bg-blue-600 text-white mb-4">
-        Continue
-      </Button>
-      <Text align="center">OR</Text>
-      <Text align="center" mt="4">
+    <form onSubmit={handleSubmit}>
+      <TextInput
+        value={email}
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
+        placeholder="Email"
+        required
+      />
+      <TextInput
+        value={password}
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
+        placeholder="Password"
+        type="password"
+        required
+      />
+      <TextInput
+        value={confirmPassword}
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setConfirmPassword(e.target.value)}
+        placeholder="Confirm Password"
+        type="password"
+        required
+      />
+      <Button type="submit">Continue</Button>
+      <div style={{ textAlign: 'center', marginTop: '4px' }}>
         Already a member? <Link href="/login">Login</Link>
-      </Text>
+      </div>
     </form>
   );
 }
