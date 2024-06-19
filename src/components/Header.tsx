@@ -27,7 +27,7 @@ export default function Header() {
               <IconUser size={16} />
               <span>Profile</span>
             </Link>
-            <Link href="/cart" className="flex items-center space-x-2">
+            <Link href="/ChekoutPage" className="flex items-center space-x-2">
               <IconShoppingCart size={16} />
               <span>Cart</span>
             </Link>

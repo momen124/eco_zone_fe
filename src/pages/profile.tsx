@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 const ProfilePage = () => {
   return (
     <div className="flex flex-col min-h-screen">
+        <Header />
       <div className="container mx-auto py-10 flex-grow">
         <div className="max-w-md mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
           <h1 className="text-2xl font-bold mb-4">Profile</h1>
