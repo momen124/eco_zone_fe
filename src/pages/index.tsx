@@ -6,10 +6,9 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const router = useRouter()
   return (
-    <div>
-      <Link href={"/momen"}>Go to momen</Link>
+    <div className={inter.className}>
+      <Link href="/Register">Go to Common Page</Link>
     </div>
   );
 }
