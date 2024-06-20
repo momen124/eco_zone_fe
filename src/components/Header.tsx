@@ -1,6 +1,7 @@
+import type { InputProps } from '@mantine/core';
+import { Input } from '@mantine/core';
+import { IconSearch, IconShoppingCart, IconUser } from '@tabler/icons-react';
 import Link from 'next/link';
-import { IconUser, IconShoppingCart, IconSearch } from '@tabler/icons-react';
-import { Input, InputProps } from '@mantine/core';
 
 interface CustomInputProps extends InputProps {
   icon?: React.ReactNode;

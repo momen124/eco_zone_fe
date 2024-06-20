@@ -1,7 +1,7 @@
-import { Input, Button } from '@mantine/core';
+import { Button } from '@mantine/core';
+import Link from 'next/link';
 import { useState } from 'react';
 import TextInput from '../ui/TextInput';
-import Link from 'next/link';
 
 export default function RegisterForm() {
   const [email, setEmail] = useState('');

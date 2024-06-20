@@ -1,17 +1,22 @@
-// pages/_app.tsx
+import useLanguage from '@/hooks/useLanguage.jsx';
 import '@/styles/globals.css';
+import { DirectionProvider, MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
+import { appWithTranslation } from 'next-i18next';
 import type { AppProps } from 'next/app';
-import { MantineProvider } from '@mantine/core';
+import NextI18nextConfig from '../../next-i18next.config.js';
 
-const theme = {
-  // Put your Mantine theme overrides here
-};
+const theme = {};
 
-export default function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
+  const { language } = useLanguage();
   return (
-    <MantineProvider theme={theme}>
-      <Component {...pageProps} />
-    </MantineProvider>
+    <DirectionProvider initialDirection={language === 'en' ? 'ltr' : 'rtl'}>
+      <MantineProvider theme={theme}>
+        <Component {...pageProps} />
+      </MantineProvider>
+    </DirectionProvider>
   );
 }
+
+export default appWithTranslation<AppProps>(App, NextI18nextConfig) as unknown as typeof App;

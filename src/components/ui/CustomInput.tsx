@@ -1,4 +1,5 @@
-import { Input, InputProps } from '@mantine/core';
+import type { InputProps } from '@mantine/core';
+import { Input } from '@mantine/core';
 
 interface CustomInputProps extends InputProps {
   icon?: React.ReactNode;
