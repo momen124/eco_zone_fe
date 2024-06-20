@@ -1,58 +1,65 @@
-export default function Footer() {
-    return (
-      <footer className="bg-white py-6 border-t">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center">
-            <div>
-              <h2 className="text-xl font-bold">EcoZone eCommerce</h2>
-              {/* <div className="flex space-x-4 mt-2">
-                <a href="#" aria-label="Facebook" className="text-gray-500 hover:text-gray-900"><IconFacebook size={24} /></a>
-                <a href="#" aria-label="YouTube" className="text-gray-500 hover:text-gray-900"><IconYouTube size={24} /></a>
-                <a href="#" aria-label="Telegram" className="text-gray-500 hover:text-gray-900"><IconTelegram size={24} /></a>
-                <a href="#" aria-label="Twitter" className="text-gray-500 hover:text-gray-900"><IconTwitter size={24} /></a>
-              </div> */}
-            </div>
-            <div className="flex space-x-8">
-              <div>
-                <h3 className="text-lg font-semibold">Getting started</h3>
-                <ul className="mt-2 space-y-2">
-                  <li><a href="#" className="text-gray-500 hover:text-gray-900">Release Notes</a></li>
-                  <li><a href="#" className="text-gray-500 hover:text-gray-900">Upgrade Guide</a></li>
-                  <li><a href="#" className="text-gray-500 hover:text-gray-900">Browser Support</a></li>
-                  <li><a href="#" className="text-gray-500 hover:text-gray-900">Dark Mode</a></li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold">Explore</h3>
-                <ul className="mt-2 space-y-2">
-                  <li><a href="#" className="text-gray-500 hover:text-gray-900">Prototyping</a></li>
-                  <li><a href="#" className="text-gray-500 hover:text-gray-900">Design systems</a></li>
-                  <li><a href="#" className="text-gray-500 hover:text-gray-900">Pricing</a></li>
-                  <li><a href="#" className="text-gray-500 hover:text-gray-900">Security</a></li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold">Community</h3>
-                <ul className="mt-2 space-y-2">
-                  <li><a href="#" className="text-gray-500 hover:text-gray-900">Discussion Forums</a></li>
-                  <li><a href="#" className="text-gray-500 hover:text-gray-900">Code of Conduct</a></li>
-                  <li><a href="#" className="text-gray-500 hover:text-gray-900">Contributing</a></li>
-                  <li><a href="#" className="text-gray-500 hover:text-gray-900">API Reference</a></li>
-                </ul>
-              </div>
-            </div>
-            <div className="mt-4 text-gray-500">
-              EcoZone eCommerce. © 2024
-            </div>
-            {/* <div className="flex space-x-4 mt-2">
-              <a href="#" aria-label="Visa" className="text-gray-500 hover:text-gray-900"><IconVisa size={32} /></a>
-              <a href="#" aria-label="PayPal" className="text-gray-500 hover:text-gray-900"><IconPayPal size={32} /></a>
-              <a href="#" aria-label="Stripe" className="text-gray-500 hover:text-gray-900"><IconStripe size={32} /></a>
-              <a href="#" aria-label="MasterCard" className="text-gray-500 hover:text-gray-900"><IconMasterCard size={32} /></a>
-            </div> */}
-          </div>
+import React from 'react'
+import { FaFacebook, FaYoutube, FaTelegram } from 'react-icons/fa'
+
+const Footer: React.FC = () => {
+  return (
+    <footer className="bg-gray-100 py-8 mt-12">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 className="text-lg font-bold mb-4">NEXTON</h3>
+          <ul className="space-y-2">
+            <li className="flex items-center">
+              <FaFacebook className="mr-2" />
+              <a href="#" className="text-gray-700 hover:text-blue-500">Facebook</a>
+            </li>
+            <li className="flex items-center">
+              <FaYoutube className="mr-2" />
+              <a href="#" className="text-gray-700 hover:text-blue-500">YouTube</a>
+            </li>
+            <li className="flex items-center">
+              <FaTelegram className="mr-2" />
+              <a href="#" className="text-gray-700 hover:text-blue-500">Telegram</a>
+            </li>
+          </ul>
         </div>
-      </footer>
-    );
-  }
-  
+        <div>
+          <h3 className="text-lg font-bold mb-4">Getting started</h3>
+          <ul className="space-y-2">
+            <li><a href="#" className="text-gray-700 hover:text-blue-500">Release Notes</a></li>
+            <li><a href="#" className="text-gray-700 hover:text-blue-500">Upgrade Guide</a></li>
+            <li><a href="#" className="text-gray-700 hover:text-blue-500">Browser Support</a></li>
+            <li><a href="#" className="text-gray-700 hover:text-blue-500">Dark Mode</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="text-lg font-bold mb-4">Explore</h3>
+          <ul className="space-y-2">
+            <li><a href="#" className="text-gray-700 hover:text-blue-500">Prototyping</a></li>
+            <li><a href="#" className="text-gray-700 hover:text-blue-500">Design Systems</a></li>
+            <li><a href="#" className="text-gray-700 hover:text-blue-500">Pricing</a></li>
+            <li><a href="#" className="text-gray-700 hover:text-blue-500">Security</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="text-lg font-bold mb-4">Community</h3>
+          <ul className="space-y-2">
+            <li><a href="#" className="text-gray-700 hover:text-blue-500">Discussion Forums</a></li>
+            <li><a href="#" className="text-gray-700 hover:text-blue-500">Code of Conduct</a></li>
+            <li><a href="#" className="text-gray-700 hover:text-blue-500">Contributing</a></li>
+            <li><a href="#" className="text-gray-700 hover:text-blue-500">API Reference</a></li>
+          </ul>
+        </div>
+      </div>
+      <div className="container mx-auto mt-8 text-center text-gray-500">
+        <p>&copy; NEXTON eCommerce. All rights reserved.</p>
+      </div>
+      <div className="container mx-auto mt-4 flex justify-center space-x-4">
+        <img src="/path/to/visa-logo.png" alt="Visa" className="h-6"/>
+        <img src="/path/to/paypal-logo.png" alt="PayPal" className="h-6"/>
+        <img src="/path/to/amex-logo.png" alt="Amex" className="h-6"/>
+      </div>
+    </footer>
+  )
+}
+
+export default Footer
