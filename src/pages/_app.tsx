@@ -1,4 +1,4 @@
-import useLanguage from '@/hooks/useLanguage.jsx';
+import useLanguage from '@/hooks/useLanguage';
 import '@/styles/globals.css';
 import { DirectionProvider, MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
