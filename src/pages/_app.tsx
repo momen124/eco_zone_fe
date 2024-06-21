@@ -1,10 +1,10 @@
-import useLanguage from '@/hooks/useLanguage.jsx';
 import '@/styles/globals.css';
 import { DirectionProvider, MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
 import { appWithTranslation } from 'next-i18next';
 import type { AppProps } from 'next/app';
 import NextI18nextConfig from '../../next-i18next.config.js';
+import useLanguage from '../hooks/useLanguage';
 
 const theme = {};
 

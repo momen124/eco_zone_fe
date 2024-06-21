@@ -12,23 +12,23 @@ const CustomInput = (props: CustomInputProps) => <Input {...props} />;
 
 export default function Header() {
   return (
-    <header className="border-b py-4">
+    <header className="border-b border-deep-blue-500 py-4 bg-primary-50">
       <div className="container mx-auto flex justify-between items-center">
         <div>
-          <h1 className="text-xl font-bold">EcoZone eCommerce</h1>
+          <h1 className="text-xl font-bold text-deep-blue-500">EcoZone eCommerce</h1>
         </div>
         <div className="flex items-center space-x-4">
           <CustomInput 
             icon={<IconSearch size={16} />} 
             placeholder="Search in products" 
-            className="w-64" 
+            className="w-64 border-secondary-500" 
           />
           <nav className="flex items-center space-x-4">
-            <Link href="/profile" className="flex items-center space-x-2">
+            <Link href="/profile" className="flex items-center space-x-2 text-deep-blue-500 hover:text-primary-500">
               <IconUser size={16} />
               <span>Profile</span>
             </Link>
-            <Link href="/cart" className="flex items-center space-x-2">
+            <Link href="/cart" className="flex items-center space-x-2 text-deep-blue-500 hover:text-primary-500">
               <IconShoppingCart size={16} />
               <span>Cart</span>
             </Link>
