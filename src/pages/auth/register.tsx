@@ -1,7 +1,9 @@
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import RegisterForm from '@/components/form/registerForm';
-export default function RegisterPage() {
+import type { NextPage } from 'next';
+
+const RegisterPage: NextPage = () => {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       <Header />
@@ -14,4 +16,6 @@ export default function RegisterPage() {
       <Footer />
     </div>
   );
-}
+};
+
+export default RegisterPage;
