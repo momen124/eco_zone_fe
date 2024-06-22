@@ -5,12 +5,6 @@ export default function Footer() {
           <div className="flex justify-between items-center">
             <div>
               <h2 className="text-xl font-bold">EcoZone eCommerce</h2>
-              {/* <div className="flex space-x-4 mt-2">
-                <a href="#" aria-label="Facebook" className="text-gray-500 hover:text-gray-900"><IconFacebook size={24} /></a>
-                <a href="#" aria-label="YouTube" className="text-gray-500 hover:text-gray-900"><IconYouTube size={24} /></a>
-                <a href="#" aria-label="Telegram" className="text-gray-500 hover:text-gray-900"><IconTelegram size={24} /></a>
-                <a href="#" aria-label="Twitter" className="text-gray-500 hover:text-gray-900"><IconTwitter size={24} /></a>
-              </div> */}
             </div>
             <div className="flex space-x-8">
               <div>
@@ -44,12 +38,6 @@ export default function Footer() {
             <div className="mt-4 text-gray-500">
               EcoZone eCommerce. © 2024
             </div>
-            {/* <div className="flex space-x-4 mt-2">
-              <a href="#" aria-label="Visa" className="text-gray-500 hover:text-gray-900"><IconVisa size={32} /></a>
-              <a href="#" aria-label="PayPal" className="text-gray-500 hover:text-gray-900"><IconPayPal size={32} /></a>
-              <a href="#" aria-label="Stripe" className="text-gray-500 hover:text-gray-900"><IconStripe size={32} /></a>
-              <a href="#" aria-label="MasterCard" className="text-gray-500 hover:text-gray-900"><IconMasterCard size={32} /></a>
-            </div> */}
           </div>
         </div>
       </footer>
