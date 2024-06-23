@@ -35,9 +35,10 @@ export default function RegisterForm() {
         type="password"
         required
       />
-      <Button type="submit" className='flex justify-center'>Continue</Button>
-      <div style={{ textAlign: 'center', marginTop: '4px' }}>
+      <Button type="submit" className='flex justify-center text-gray-700'>Continue</Button>
+      <div className='text-form-text' style={{ textAlign: 'center', marginTop: '4px' }}>
         Already a member? <Link href="/login">Login</Link>
+        
       </div>
     </form>
   );

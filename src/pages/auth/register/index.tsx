@@ -8,9 +8,9 @@ export default function RegisterPage() {
 
   return (
     <AppLayout>
-      <div className="flex-grow flex justify-center items-center bg-primary-50">
+      <div className="flex-grow flex justify-center items-center bg-body-background">
         <div className="bg-white p-8 shadow-md rounded w-full max-w-md">
-          <h1 className="text-2xl mb-4 text-center text-secondary-500">{t('register')}</h1>
+          <h1 className="text-2xl mb-4 text-center text-form-title">{t('register')}</h1>
           <RegisterForm />
         </div>
       </div>
