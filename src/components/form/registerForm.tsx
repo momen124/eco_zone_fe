@@ -36,7 +36,7 @@ export default function RegisterForm() {
         required
       />
       <Button type="submit" className='flex justify-center text-gray-700'>Continue</Button>
-      <div className='text-form-text' style={{ textAlign: 'center', marginTop: '4px' }}>
+      <div className='taxt-form-402' style={{ textAlign: 'center', marginTop: '4px' }}>
         Already a member? <Link href="/login">Login</Link>
         
       </div>

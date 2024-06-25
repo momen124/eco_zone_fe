@@ -9,34 +9,40 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "header": {
-          "logo": "#176B87",
-          "items": "#176B87",
-          "items-hover": "#86B6F6",
-          "background": "#B4D4FF"
-        },
-        "footer": {
-          "items": "#176B87",
-          "items-hover": "#86B6F6",
-          "title": "#176B87",
-          "title-hover": "#86B6F6",
-          "background": "#B4D4FF"
-        },
+        // Primary Color
+        'primary': {
+          '50': '#987070',
+          '100': '#987070',
+          '200': '#153448',
+          '300': '#DBB5B5'
+         }, // Base Primary
 
-        "button": {
-          "text": "#176B87",
-          "background": "#176B87",
-          "background-hover": "#86B6F6"
-        },
+          // Secondary Color
+        'secondary': {
+          '50': '#987070',
+          '100': '#C39898',
+          '250': '#DBB5B5',
+          '280': '#C39898',
+          '300': '#DBB5B5'
+        }, // Base Secondary
 
-        "body": {
-          "background": "#EEF5FF"
-        },
+          // Button Color
+          "button": {
+          '50': "#C39898",
+          '150': "#DBB5B5",
+          '250': "#987070"
+        }, // Base Button
 
-        "form": {
-          "text": "#176B87",
-          "title": "#176B87"
-        },
+        // Budy Color
+        'body': {
+          '350': "#F1E5D1"
+        }, // Base Budy
+
+        // Form Color
+        'form': {
+          '402': "#C39898",
+          '450': "#987070"
+        }, // Base Form
       },
     },
   },

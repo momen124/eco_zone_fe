@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-footer-background py-6 border-t border-footer-background">
+    <footer className="bg-secondary-300 py-6 border-t border-secondary-300">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <div>
@@ -13,31 +13,31 @@ export default function Footer() {
           </div>
           <div className="flex space-x-8">
             <div>
-              <h3 className="text-footer-title hover:text-footer-title-hover">Getting started</h3>
+              <h3 className="text-secondary-250:text-secondary-200">Getting started</h3>
               <ul className="mt-2 space-y-2">
-                <li><a href="#" className="text-footer-items hover:text-footer-items-hover">Release Notes</a></li>
-                <li><a href="#" className="text-footer-items hover:text-footer-items-hover">Upgrade Guide</a></li>
-                <li><a href="#" className="text-footer-items hover:text-footer-items-hover">Browser Support</a></li>
-                <li><a href="#" className="text-footer-items hover:text-footer-items-hover">Dark Mode</a></li>
+                <li><a href="#" className="text-secondary-50 hover:text-secondary-100">Release Notes</a></li>
+                <li><a href="#" className="text-secondary-50 hover:text-secondary-100">Upgrade Guide</a></li>
+                <li><a href="#" className="text-secondary-50 hover:text-secondary-100">Browser Support</a></li>
+                <li><a href="#" className="text-secondary-50 hover:text-secondary-100">Dark Mode</a></li>
               </ul>
 
             </div>
             <div>
-              <h3 className="text-footer-title hover:text-footer-title-hover">Explore</h3>
+              <h3 className="text-secondary-250:text-secondary-280">Explore</h3>
               <ul className="mt-2 space-y-2">
-                <li><a href="#" className="text-footer-items hover:text-footer-items-hover">Prototyping</a></li>
-                <li><a href="#" className="text-footer-items hover:text-footer-items-hover">Design systems</a></li>
-                <li><a href="#" className="text-footer-items hover:text-footer-items-hover">Pricing</a></li>
-                <li><a href="#" className="text-footer-items hover:text-footer-items-hover">Security</a></li>
+                <li><a href="#" className="text-secondary-50 hover:text-secondary-100">Prototyping</a></li>
+                <li><a href="#" className="text-secondary-50 hover:text-secondary-100">Design systems</a></li>
+                <li><a href="#" className="text-secondary-50 hover:text-secondary-100">Pricing</a></li>
+                <li><a href="#" className="text-secondary-50 hover:text-secondary-100">Security</a></li>
               </ul>
             </div>
             <div>
-              <h3 className="text-footer-title hover:text-footer-title-hover">Community</h3>
+              <h3 className="text-secondary-250:text-secondary-280">Community</h3>
               <ul className="mt-2 space-y-2">
-                <li><a href="#" className="text-footer-items hover:text-footer-items-hover">Discussion Forums</a></li>
-                <li><a href="#" className="text-footer-items hover:text-footer-items-hover">Code of Conduct</a></li>
-                <li><a href="#" className="text-footer-items hover:text-footer-items-hover">Contributing</a></li>
-                <li><a href="#" className="text-footer-items hover:text-footer-items-hover">API Reference</a></li>
+                <li><a href="#" className="text-secondary-50 hover:text-secondary-100">Discussion Forums</a></li>
+                <li><a href="#" className="text-secondary-50 hover:text-secondary-100">Code of Conduct</a></li>
+                <li><a href="#" className="text-secondary-50 hover:text-secondary-100">Contributing</a></li>
+                <li><a href="#" className="text-secondary-50 hover:text-secondary-100">API Reference</a></li>
               </ul>
             </div>
           </div>
