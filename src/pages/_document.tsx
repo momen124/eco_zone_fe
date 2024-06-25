@@ -1,3 +1,4 @@
+import { ColorSchemeScript } from '@mantine/core';
 import type { DocumentProps } from 'next/document';
 import { Head, Html, Main, NextScript } from 'next/document';
 
@@ -7,7 +8,9 @@ export default function Document({ locale = 'en' }: DocumentProps) {
 
   return (
     <Html lang={lang} dir={dir}>
-      <Head />
+      <Head>
+        <ColorSchemeScript defaultColorScheme="auto" />
+      </Head>
       <body>
         <Main />
         <NextScript />
