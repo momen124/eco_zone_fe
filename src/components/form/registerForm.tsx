@@ -12,7 +12,7 @@ const RegisterForm: NextPage = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
-  const logError = async (error) => {
+  const logError = async (error: unknown) => {
     try {
       await fetch('/api/logError', {
         method: 'POST',
