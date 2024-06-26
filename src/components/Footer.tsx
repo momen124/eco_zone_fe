@@ -6,10 +6,10 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-center space-y-8">
           <div className="flex space-x-4 mt-2">
-            <a href="#" aria-label="Facebook" className="text-gray-600 hover:text-gray-900"><FaFacebook size={24} /></a>
-            <a href="#" aria-label="YouTube" className="text-gray-600 hover:text-gray-900"><FaYoutube size={24} /></a>
-            <a href="#" aria-label="Telegram" className="text-gray-600 hover:text-gray-900"><FaTelegram size={24} /></a>
-            <a href="#" aria-label="Twitter" className="text-gray-600 hover:text-gray-900"><FaTwitter size={24} /></a>
+            <a href="#" aria-label="Facebook" className="text-white-50 hover:text-gray-800"><FaFacebook size={24} /></a>
+            <a href="#" aria-label="YouTube" className="text-white-50 hover:text-gray-800"><FaYoutube size={24} /></a>
+            <a href="#" aria-label="Telegram" className="text-white-50 hover:text-gray-800"><FaTelegram size={24} /></a>
+            <a href="#" aria-label="Twitter" className="text-white-50 hover:text-gray-800"><FaTwitter size={24} /></a>
           </div>
           <div className="flex space-x-8">
             <div className="text-center">
@@ -41,10 +41,10 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex space-x-4 mt-2">
-            <a href="#" aria-label="Visa" className="text-gray-600 hover:text-gray-900"><FaCcVisa size={32} /></a>
-            <a href="#" aria-label="PayPal" className="text-gray-600 hover:text-gray-900"><FaPaypal size={32} /></a>
-            <a href="#" aria-label="Stripe" className="text-gray-600 hover:text-gray-900"><FaStripe size={32} /></a>
-            <a href="#" aria-label="MasterCard" className="text-gray-600 hover:text-gray-900"><FaCcMastercard size={32} /></a>
+            <a href="#" aria-label="Visa" className="text-white-50 hover:text-gray-800"><FaCcVisa size={32} /></a>
+            <a href="#" aria-label="PayPal" className="text-white-50 hover:text-gray-800"><FaPaypal size={32} /></a>
+            <a href="#" aria-label="Stripe" className="text-white-50 hover:text-gray-800"><FaStripe size={32} /></a>
+            <a href="#" aria-label="MasterCard" className="text-white-50 hover:text-gray-800"><FaCcMastercard size={32} /></a>
           </div>
         </div>
       </div>
