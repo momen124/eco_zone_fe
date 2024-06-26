@@ -11,7 +11,7 @@ export default function Document({ locale = 'en' }: DocumentProps) {
       <Head>
         <ColorSchemeScript defaultColorScheme="auto" />
       </Head>
-      <body>
+      <body className='bg-background-950'>
         <Main />
         <NextScript />
       </body>
