@@ -2,6 +2,7 @@ import type { InputProps } from '@mantine/core';
 import { Input } from '@mantine/core';
 import { IconSearch, IconShoppingCart, IconUser } from '@tabler/icons-react';
 import Link from 'next/link';
+import LanguageToggle from './Header/LanguageToggle';
 
 interface CustomInputProps extends InputProps {
   icon?: React.ReactNode;
@@ -24,6 +25,7 @@ export default function Header() {
             className="w-64" 
           />
           <nav className="flex items-center space-x-4">
+            <LanguageToggle />
             <Link href="/profile" className="flex items-center space-x-2">
               <IconUser size={16} />
               <span>Profile</span>

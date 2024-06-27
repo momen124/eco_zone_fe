@@ -1,6 +1,7 @@
 import '@/styles/globals.css';
 import { DirectionProvider, MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
+import { SessionProvider } from 'next-auth/react';
 import { appWithTranslation } from 'next-i18next';
 import type { AppProps } from 'next/app';
 import NextI18nextConfig from '../../next-i18next.config.js';
@@ -13,7 +14,9 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <DirectionProvider initialDirection={language === 'en' ? 'ltr' : 'rtl'}>
       <MantineProvider theme={theme}>
-        <Component {...pageProps} />
+        <SessionProvider session={pageProps.session}>
+          <Component {...pageProps} />
+        </SessionProvider>
       </MantineProvider>
     </DirectionProvider>
   );
