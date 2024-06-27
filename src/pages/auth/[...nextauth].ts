@@ -2,16 +2,16 @@ import NextAuth from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
 
 // Mock database function to get user by email
-const getUserByEmail = async email => {
+const getUserByEmail = async (email?: string) => {
   // Mock user data
   const users = [
-    { id: 1, name: 'Momen', email: 'momen@gmail.com', password: '123456' },
+    { id: '1', name: 'Momen', email: 'momen@gmail.com', password: '123456' },
     // Add more users as needed
   ];
   return users.find(user => user.email === email);
 };
 
-const authOptions = {
+export default NextAuth({
   session: {
     strategy: 'jwt',
   },
@@ -19,15 +19,12 @@ const authOptions = {
     CredentialsProvider({
       type: 'credentials',
       credentials: {
-        email: {
-          label: 'Email',
-          type: 'email',
-          placeholder: 'me@example.com',
-        },
-        password: { label: 'Password', type: 'password' },
+        username: { type: 'email' },
+        password: { type: 'password' },
       },
-      authorize: async (credentials, req) => {
-        const { email, password } = credentials;
+      async authorize(credentials) {
+        const email = credentials?.username;
+        const password = credentials?.password;
 
         // Fetch the user by email
         const user = await getUserByEmail(email);
@@ -45,6 +42,4 @@ const authOptions = {
   pages: {
     signIn: '/login',
   },
-};
-
-export default NextAuth(authOptions);
+});

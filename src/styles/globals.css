@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a {
+  @apply text-text-400 transition-all duration-150 hover:text-primary-600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-text-50;
+}
+
+p {
+  @apply text-text-200;
+}
+
+button {
+  @apply bg-primary-500 text-text-50 hover:bg-primary-300;
+}
+
+input,
+textarea {
+  @apply border border-text-200 bg-background-300 text-text-50;
+}
+
+ul,
+ol {
+  @apply text-text-200;
+}
+
+blockquote {
+  @apply border-l-4 border-primary-500 pl-4 text-text-200;
+}

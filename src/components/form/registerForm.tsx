@@ -1,10 +1,11 @@
+
 import { registerSchema } from '@/schemas/registerSchema';
-import { Button } from '@mantine/core';
 import { showNotification } from '@mantine/notifications';
 import type { NextPage } from 'next';
 import { signIn } from 'next-auth/react';
 import Link from 'next/link';
 import { useState } from 'react';
+import Button from '../Base/Button';
 import TextInput from '../ui/TextInput';
 
 const RegisterForm: NextPage = () => {
@@ -12,7 +13,7 @@ const RegisterForm: NextPage = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
-  const logError = async (error) => {
+  const logError = async (error: unknown) => {
     try {
       await fetch('/api/logError', {
         method: 'POST',
@@ -96,12 +97,13 @@ const RegisterForm: NextPage = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='flex flex-col items-center justify-center gap-4 w-full'>
       <TextInput
         value={email}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
         placeholder="Email"
         required
+        className='w-full'
       />
       <TextInput
         value={password}
@@ -109,6 +111,7 @@ const RegisterForm: NextPage = () => {
         placeholder="Password"
         type="password"
         required
+        className='w-full'
       />
       <TextInput
         value={confirmPassword}
@@ -116,10 +119,13 @@ const RegisterForm: NextPage = () => {
         placeholder="Confirm Password"
         type="password"
         required
+        className='w-full'
       />
-      <Button type="submit">Continue</Button>
-      <div style={{ textAlign: 'center', marginTop: '4px' }}>
+      <Button variant='primary' namespace='common' text="continue" type="submit" />
+      
+      <div className='taxt-form-402' style={{ textAlign: 'center', marginTop: '4px' }}>
         Already a member? <Link href="/login">Login</Link>
+        
       </div>
     </form>
   );

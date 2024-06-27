@@ -32,10 +32,15 @@
     "no-restricted-imports": [
       "error",
       {
-        "patterns": [
+        "paths": [
           {
-            "group": ["react-i18next"],
+            "name": "react-i18next",
             "message": "Import from 'react-i18next' is not allowed. Use 'next-i18next' instead."
+          },
+          {
+            "name": "@mantine/core",
+            "importNames": ["Button"],
+            "message": "Please import Button from the base component instead."
           }
         ]
       }

@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className='p-4'>
       <LanguageToggle />
-      <Link href="/auth/register">{t('register')}</Link>
+      <Link href={`/auth/register`}>{t('register')}</Link>
     </div>
   );
 }
